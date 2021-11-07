@@ -24,7 +24,7 @@ const Navbar = () => {
             src="/logo.png"
             width="120"
             height="100"
-            intrinsic
+            intrinsic="true"
             alt="Cazza Logo"
           />
         </div>

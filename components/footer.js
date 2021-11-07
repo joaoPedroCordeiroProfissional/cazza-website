@@ -5,7 +5,7 @@ import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer classNameName="footer">
+    <footer>
       <div className="content has-text-centered">
         <div className={styles.image}>
           <Image src="/logo.png" width="263" height="219" alt="Cazza Logo" />
