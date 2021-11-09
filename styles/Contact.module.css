@@ -1,0 +1,84 @@
+.container {
+  padding: 0 2rem;
+}
+
+.formContainer {
+  margin-bottom: 3.125rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.125rem;
+}
+
+.dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.informationTitle {
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 0.313rem;
+}
+
+.content {
+  margin-left: 10.938rem;
+  font-size: 1.25rem;
+}
+
+.specialContent {
+  margin-left: 10.938rem;
+  font-size: 1.25rem;
+}
+
+.specialContent:hover {
+  text-decoration: underline;
+  color: rgb(174, 174, 174);
+}
+
+.orderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order {
+  font-family: Roboto;
+  font-size: 2.25rem;
+  color: #e32927;
+  text-transform: uppercase;
+  margin-bottom: 2.625rem;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 16.25rem;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 28.125rem;
+}
+
+.wrapperInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}

@@ -42,8 +42,8 @@ const Menu = () => {
                 />
                 <div className="card-content">
                   <div className="content">
-                    Rump
-                    <a href="#">#responsive</a>
+                    Grilled rump steak, crumbled brown beans and white rice
+                    {/* <a href="#">#responsive</a> */}
                     <br />
                   </div>
                 </div>
@@ -61,8 +61,9 @@ const Menu = () => {
                 />
                 <div className="card-content">
                   <div className="content">
-                    Rump
-                    <a href="#">#responsive</a>
+                    Grilled rump steak, spicy homemade pork sausage, fries,
+                    crumbled brown beans, white rice, fries and salad
+                    {/* <a href="#">#responsive</a> */}
                     <br />
                   </div>
                 </div>
@@ -81,8 +82,8 @@ const Menu = () => {
                 />
                 <div className="card-content">
                   <div className="content">
-                    Rump
-                    <a href="#">#responsive</a>
+                    Creamy chicken breast, fries, white rice
+                    {/* <a href="#">#responsive</a> */}
                     <br />
                   </div>
                 </div>
@@ -103,8 +104,8 @@ const Menu = () => {
                 />
                 <div className="card-content">
                   <div className="content">
-                    Rump
-                    <a href="#">#responsive</a>
+                    Double ribs homemade burger
+                    {/* <a href="#">#responsive</a> */}
                     <br />
                   </div>
                 </div>
@@ -122,8 +123,8 @@ const Menu = () => {
                 />
                 <div className="card-content">
                   <div className="content">
-                    Rump
-                    <a href="#">#responsive</a>
+                    Chicken breast breaded burger with fries and salad
+                    {/* <a href="#">#responsive</a> */}
                     <br />
                   </div>
                 </div>
@@ -142,8 +143,8 @@ const Menu = () => {
                 />
                 <div className="card-content">
                   <div className="content">
-                    Rump
-                    <a href="#">#responsive</a>
+                    spicy chicken wings
+                    {/* <a href="#">#responsive</a> */}
                     <br />
                   </div>
                 </div>
@@ -163,8 +164,8 @@ const Menu = () => {
                 />
                 <div className="card-content">
                   <div className="content">
-                    Rump
-                    <a href="#">#responsive</a>
+                    French fries with melting cheese and bacon
+                    {/* <a href="#">#responsive</a> */}
                     <br />
                   </div>
                 </div>
@@ -182,8 +183,8 @@ const Menu = () => {
                 />
                 <div className="card-content">
                   <div className="content">
-                    Rump
-                    <a href="#">#responsive</a>
+                    Vanilla strawberry cake in the pot
+                    {/* <a href="#">#responsive</a> */}
                     <br />
                   </div>
                 </div>
@@ -202,8 +203,8 @@ const Menu = () => {
                 />
                 <div className="card-content">
                   <div className="content">
-                    Rump
-                    <a href="#">#responsive</a>
+                    coronation chicken baguette
+                    {/* <a href="#">#responsive</a> */}
                     <br />
                   </div>
                 </div>
