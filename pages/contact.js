@@ -4,10 +4,11 @@ import Head from "next/head";
 import PageTitle from "../components/pageTitile";
 
 import styles from "../styles/Contact.module.css";
+import { Col, Container, Row, Button } from "react-bootstrap";
 
 function Contact() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>CAZZA - Food Truck Restaurant</title>
         <meta name="description" content="Hire us - Food Truck Restaurant" />
@@ -23,93 +24,95 @@ function Contact() {
         />
       </Head>
 
-      <PageTitle
-        title="Contact us"
-        subtitle="Please fell free to contact us through the following channels"
-      />
+      <Container>
+        <PageTitle
+          title="Contact us"
+          subtitle="Please fell free to contact us through the following channels"
+        />
 
-      <div className={styles.formContainer}>
-        <div className="columns is-desktop">
-          <div className="column">
-            <div className={styles.information}>
-              <div className={styles.wrapper}>
-                <div className={styles.dot} />
-                <p className={styles.informationTitle}>Opening hours</p>
+        <div className={styles.formContainer}>
+          <Row>
+            <Col lg={6} md={6} className="mb-5">
+              <div className={styles.information}>
+                <div className={styles.wrapper}>
+                  <div className={styles.dot} />
+                  <p className={styles.informationTitle}>Opening hours</p>
+                </div>
+
+                <p className={styles.content}>9am - 4pm | Monday to Friday</p>
               </div>
 
-              <p className={styles.content}>9am - 4pm | Monday to Friday</p>
-            </div>
-
-            <div className={styles.information}>
-              <div className={styles.wrapper}>
-                <div className={styles.dot} />
-                <p className={styles.informationTitle}>Contact Info</p>
+              <div className={styles.information}>
+                <div className={styles.wrapper}>
+                  <div className={styles.dot} />
+                  <p className={styles.informationTitle}>Contact Info</p>
+                </div>
+                <a
+                  className={styles.specialContent}
+                  href="mailto:elisangela@cazza.uk"
+                >
+                  contact@cazza.uk
+                </a>
+                <a className={styles.specialContent} href="tel:+">
+                  +44 1234 567 980
+                </a>
               </div>
-              <a
-                className={styles.specialContent}
-                href="mailto:elisangela@cazza.uk"
-              >
-                contact@cazza.uk
-              </a>
-              <a className={styles.specialContent} href="tel:+">
-                +44 1234 567 980
-              </a>
-            </div>
-
-            <div className={styles.orderContainer}>
-              <p className={styles.order}>Order Here</p>
-              <div className={styles.imageContainer}>
-                <Image
-                  src="/instagram-colored.png"
-                  width="52"
-                  height="52"
-                  alt="Cazza Instagram"
-                />
-                <Image
-                  src="/facebook-colored.png"
-                  width="52"
-                  height="52"
-                  alt="Cazza Facebook"
-                />
-                <Image
-                  src="/whatsapp-colored.png"
-                  width="52"
-                  height="52"
-                  alt="Cazza Whatsapp"
-                />
+              <div className={styles.orderContainer}>
+                <p className={styles.order}>Order Here</p>
+                <div className={styles.imageContainer}>
+                  <Image
+                    src="/instagram-colored.png"
+                    width="52"
+                    height="52"
+                    alt="Cazza Instagram"
+                  />
+                  <Image
+                    src="/facebook-colored.png"
+                    width="52"
+                    height="52"
+                    alt="Cazza Facebook"
+                  />
+                  <Image
+                    src="/whatsapp-colored.png"
+                    width="52"
+                    height="52"
+                    alt="Cazza Whatsapp"
+                  />
+                </div>
               </div>
-            </div>
-          </div>
+            </Col>
 
-          <div className="column">
-            <div className={styles.inputContainer}>
-              <div className={styles.wrapperInput}>
-                <div>Name</div>
-                <input className="input" type="text" placeholder="Name" />
+            <Col lg={6} md={6}>
+              <div className={styles.inputContainer}>
+                <div className={styles.wrapperInput}>
+                  <div>Name</div>
+                  <input type="text" placeholder="Name" />
+                </div>
+                <div className={styles.wrapperInput}>
+                  <div>Email</div>
+                  <input type="text" placeholder="Email" />
+                </div>
+
+                <div className={styles.wrapperInput}>
+                  <div>Email</div>
+
+                  <textarea
+                    rows="4"
+                    cols="50"
+                    type="textarea"
+                    placeholder="I'd like to hire your services..."
+                  />
+                </div>
+
+                <Button variant="danger" size="lg">
+                  Send
+                </Button>
               </div>
-              <div className={styles.wrapperInput}>
-                <div>Email</div>
-                <input className="input" type="text" placeholder="Email" />
-              </div>
-
-              <div className={styles.wrapperInput}>
-                <div>Email</div>
-
-                <input
-                  className="input"
-                  type="text"
-                  placeholder="I'd like to hire your services..."
-                />
-              </div>
-
-              <a className="button is-normal is-danger">
-                <strong>Send</strong>
-              </a>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
-      </div>
-    </div>
+      </Container>
+    </>
   );
 }
 

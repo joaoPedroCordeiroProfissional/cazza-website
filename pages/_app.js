@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import "bulma/css/bulma.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import "../styles/globals.css";
 

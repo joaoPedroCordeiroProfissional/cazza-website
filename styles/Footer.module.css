@@ -1,9 +1,8 @@
-.footer {
-  display: flex;
-  flex-direction: row;
-}
-
 .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 3.125rem;
 }
 
@@ -12,18 +11,20 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  text-align: center;
   background-color: #e32927;
-  height: 26.875rem;
+  /* height: 26.875rem; */
 }
 
 .textContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   margin-top: 5.625rem;
   margin-bottom: 4.375rem;
-  height: 3.75rem;
-  align-items: center;
+  /* height: 3.75rem; */
 }
 
 .text {
@@ -45,10 +46,6 @@
   background-color: #fff;
 }
 
-.orderButton {
-  color: #e32927;
-}
-
 .social {
   display: flex;
   width: 40%;
@@ -62,4 +59,10 @@
 
 .line {
   border: solid 1px #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .dot {
+    display: none;
+  }
 }
