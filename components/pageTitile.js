@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import PropTypes from "prop-types";
+import { Container } from "react-bootstrap";
 
 import styles from "../styles/PageTitle.module.css";
 
@@ -17,11 +18,12 @@ function pageTitile({ title, subtitle }) {
           rel="stylesheet"
         />
       </Head>
-
-      <div className={styles.titleContainer}>
-        <p className={styles.title}>{title}</p>
-        <p className={styles.subtitle}>{subtitle}</p>
-      </div>
+      <Container>
+        <div className={styles.titleContainer}>
+          <p className={styles.title}>{title}</p>
+          <p className={styles.subtitle}>{subtitle}</p>
+        </div>
+      </Container>
     </>
   );
 }

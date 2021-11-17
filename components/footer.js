@@ -62,7 +62,6 @@ const Footer = () => {
 
               <Col className="d-flex flex-column justify-content-center col-12 col-md-1 col-lg-2 mb-3 mb-md-0 mb-lg-0">
                 <Link href="/events">
-                  {/* <a className={styles.textEvents}>Events</a> */}
                   <a className={styles.text}>Events</a>
                 </Link>
               </Col>
@@ -76,7 +75,6 @@ const Footer = () => {
           </div>
 
           <Row>
-            {/* <div className={styles.social}> */}
             <Col>
               <Image
                 src="/instagram.png"
@@ -103,7 +101,6 @@ const Footer = () => {
                 alt="Cazza Whatsapp"
               />
             </Col>
-            {/* </div> */}
           </Row>
 
           <div className={styles.lineContainer}>

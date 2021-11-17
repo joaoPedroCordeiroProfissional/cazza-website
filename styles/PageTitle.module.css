@@ -21,9 +21,4 @@
   font-weight: 100;
   font-size: 1.5rem;
   text-align: center;
-  width: 40.625rem;
-
-  @media only screen and (max-width: 660px) {
-    width: 100vw !important;
-  }
 }
