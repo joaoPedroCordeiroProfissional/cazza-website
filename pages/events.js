@@ -34,7 +34,11 @@ function Events() {
         />
 
         <div className={styles.buttonContainer}>
-          <Button variant="outline-danger" size="lg">
+          <Button
+            href="https://pay.yoello.com/v/cazzauk"
+            variant="outline-danger"
+            size="lg"
+          >
             Order now
           </Button>
         </div>

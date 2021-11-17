@@ -23,7 +23,11 @@ const Menu = () => {
 
         <div className={styles.buttonContainer}>
           <div className={styles.buttonWrapper}>
-            <Button href="#" variant="outline-danger" size="lg">
+            <Button
+              href="https://pay.yoello.com/v/cazzauk"
+              variant="outline-danger"
+              size="lg"
+            >
               Order here
             </Button>
           </div>

@@ -52,7 +52,11 @@ const NavbarComponent = () => {
             </Nav>
 
             <Nav>
-              <Button variant="danger" size="lg">
+              <Button
+                href="https://pay.yoello.com/v/cazzauk"
+                variant="danger"
+                size="lg"
+              >
                 Order here
               </Button>
             </Nav>

@@ -66,14 +66,20 @@ const Footer = () => {
                 </Link>
               </Col>
 
-              <Col className="col-12 col-md-3 col-lg-2 mb-3 mt-md-3 mb-lg-0">
-                <Button variant="light" size="lg">
+              <Col className="col-12 col-md-3 col-lg-2">
+                <Button
+                  href="https://pay.yoello.com/v/cazzauk"
+                  variant="light"
+                  size="lg"
+                >
                   <a>Order now</a>
                 </Button>
               </Col>
             </Row>
           </div>
-
+          <div className={styles.lineContainer}>
+            <hr className={styles.line} />
+          </div>
           <Row>
             <Col>
               <Image
@@ -102,10 +108,6 @@ const Footer = () => {
               />
             </Col>
           </Row>
-
-          <div className={styles.lineContainer}>
-            <hr className={styles.line} />
-          </div>
         </div>
       </div>
     </footer>
