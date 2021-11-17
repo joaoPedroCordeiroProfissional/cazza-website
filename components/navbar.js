@@ -1,75 +1,66 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../styles/Navbar.module.css";
+// import styles from "../styles/Navbar.module.css";
 
-const Navbar = () => {
-  /*
-   * Added this to toggle the is-active class. See:
-   *
-   * https://bulma.io/documentation/components/navbar/#navbar-menu
-   * https://github.com/jgthms/bulma/issues/856
-   */
+import { Container, Navbar, Nav, Button } from "react-bootstrap";
 
-  const toggleStyles = (event) => {
-    document.querySelector("#burger").classList.toggle("is-active");
-    document.querySelector("#navbarmenu").classList.toggle("is-active");
-  };
-
+const NavbarComponent = () => {
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div>
-        <div className={styles.logo}>
-          <Image
-            src="/logo.png"
-            width="120"
-            height="100"
-            intrinsic="true"
-            alt="Cazza Logo"
-          />
-        </div>
+    <nav>
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Container>
+          <Navbar.Brand>
+            <Link href="/">
+              <a>
+                <Image
+                  src="/logo.png"
+                  width="120"
+                  height="100"
+                  intrinsic="true"
+                  alt="Cazza Logo"
+                />
+              </a>
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link>
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
+              </Nav.Link>
 
-        <a
-          id="burger"
-          onClick={toggleStyles}
-          role="button"
-          className="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          // data-target="navbarmenu"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
+              <Nav.Link>
+                <Link href="/menu">
+                  <a className="nav-link">Menu</a>
+                </Link>
+              </Nav.Link>
 
-      <div id="navbarmenu" className="navbar-menu">
-        <div className="navbar-end">
-          <Link href="./">
-            <a className="navbar-item">Home</a>
-          </Link>
-          <Link href="/menu">
-            <a className="navbar-item">Menu</a>
-          </Link>
-          <Link href="/contact">
-            <a className="navbar-item">Hire us</a>
-          </Link>
-          <Link href="./events">
-            <a className="navbar-item">Events</a>
-          </Link>
-        </div>
+              <Nav.Link>
+                <Link href="/contact">
+                  <a>Hire us</a>
+                </Link>
+              </Nav.Link>
 
-        <div className="navbar-end">
-          <div className="navbar-item">
-            <a className="button is-medium is-fullwidth is-danger">
-              <strong>Order here</strong>
-            </a>
-          </div>
-        </div>
-      </div>
+              <Nav.Link>
+                <Link href="/events">
+                  <a>Events</a>
+                </Link>
+              </Nav.Link>
+            </Nav>
+
+            <Nav>
+              <Button variant="danger" size="lg">
+                Order here
+              </Button>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </nav>
   );
 };
 
-export default Navbar;
+export default NavbarComponent;

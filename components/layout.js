@@ -1,10 +1,10 @@
-import Navbar from "./navbar";
+import NavbarComponent from "./navbar";
 import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      <NavbarComponent />
       <main>{children}</main>
       <Footer />
     </>
