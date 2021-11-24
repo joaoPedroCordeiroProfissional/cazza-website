@@ -39,7 +39,9 @@ function Contact() {
                   <p className={styles.informationTitle}>Opening hours</p>
                 </div>
 
-                <p className={styles.content}>9am - 4pm | Monday to Friday</p>
+                <p className={styles.content}>
+                  2pm - 8:30pm | Monday to Friday
+                </p>
               </div>
 
               <div className={styles.information}>
@@ -53,8 +55,11 @@ function Contact() {
                 >
                   contact@cazza.uk
                 </a>
-                <a className={styles.specialContent} href="tel:+">
-                  +44 1234 567 980
+                <a
+                  className={styles.specialContent}
+                  href="tel:++44 7523 179 239"
+                >
+                  +44 7523 179 239
                 </a>
               </div>
               <div className={styles.orderContainer}>
