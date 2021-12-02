@@ -24,7 +24,7 @@ const Home = () => {
       <div className={styles.cover}>
         <div className={styles.text}>
           <p className={styles.title}>CAZZA</p>
-          <p className={styles.subtitle}>{'"Fresh food"'}</p>
+          <p className={styles.subtitle}>{'"Food Truck Restaurant"'}</p>
         </div>
 
         <div className={styles.image}>
