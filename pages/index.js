@@ -30,7 +30,7 @@ const Home = () => {
         <div className={styles.image}>
           <Image
             alt="Cazza Barbecue"
-            src="/background-steak.jpeg"
+            src="/background-steak-lowerRes.png"
             layout="fill"
             placeholder="blur"
             objectFit="cover"
